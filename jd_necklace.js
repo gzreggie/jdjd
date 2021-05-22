@@ -66,7 +66,8 @@ const JD_API_HOST = 'https://api.m.jd.com/api';
         }
         continue
       }
-      await jd_necklace();
+      console.log(`\n第一步\n');
+	  await jd_necklace();
     }
   }
   if ($.isNode() && allMessage) {
@@ -81,7 +82,7 @@ const JD_API_HOST = 'https://api.m.jd.com/api';
     })
 async function jd_necklace() {
   try {
-	console.log(`\n第一步\n');
+	//console.log(`\n第一步\n');
     await necklace_homePage();
     await doTask();
     await necklace_homePage();
