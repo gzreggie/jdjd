@@ -497,6 +497,7 @@ function safeGet(data) {
     }
   } catch (e) {
     console.log(e);
+    console.log(JSON.parse(data));
     console.log(`京东服务器访问数据为空，请检查自身设备网络情况`);
     return false;
   }
