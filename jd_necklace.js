@@ -67,7 +67,7 @@ const JD_API_HOST = 'https://api.m.jd.com/api';
         continue
       }
       //console.log(`\n第一步\n`);
-	  await jd_necklace();
+      await jd_necklace();
     }
   }
   if ($.isNode() && allMessage) {
